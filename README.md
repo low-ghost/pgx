@@ -28,10 +28,10 @@ optional arguments:
   -d [D], --db [D]      override environment based db
   -l [H], --location [H]
                         override environment based location (host)
-  -b, --bash            used for hacky bash interop only (used by pgxscript)
+  -b, --bash            used for hacky bash interop only (used by pgx script)
   -v VARIABLES [VARIABLES ...], --variables VARIABLES [VARIABLES ...]
                         list of variables to replace $1 style
-                        preparedarguments
+                        prepared arguments
   --print-sql           print the sql itself for debugging
   --print-command       print the command itself for debugging
   --no-jq               specifically opt out of jq parsing
