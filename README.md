@@ -9,7 +9,7 @@ via this script. Instead, I've deferred it to a bash wrapper calling this with
 the --getcommand flag and then executing
 
 ###USAGE
-
+<pre>
 usage: pgx.py [-h] [-f FILE] [-e [{p,s,d}]] [-u [U]] [-d [D]] [-l [H]] [-b]
               [-v VARIABLES [VARIABLES ...]] [--print-sql] [--print-command]
               [--no-jq] [--no-json]
@@ -36,3 +36,4 @@ optional arguments:
   --print-command       print the command itself for debugging
   --no-jq               specifically opt out of jq parsing
   --no-json             specifically opt out of json return format
+</pre>
