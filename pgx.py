@@ -30,10 +30,10 @@ def get_args():
                         help='override environment based location (host)')
     parser.add_argument('-b', '--bash', action='store_true',
                         help='used for hacky bash interop only (used by pgx'
-                        'script)')
+                        ' script)')
     parser.add_argument('-v', '--variables', nargs='+',
                         help='list of variables to replace $1 style prepared'
-                        'arguments')
+                        ' arguments')
     parser.add_argument('--print-sql', action='store_true',
                         help='print the sql itself for debugging')
     parser.add_argument('--print-command', action='store_true',
