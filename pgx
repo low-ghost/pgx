@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+result=`pgx.py --bash "$@"`
+out="$?"
+
+if [[ "$@" =~ --help|-h ]]; then
+    echo "$result"
+elif [[ "$out" -eq 0 ]]; then
+    if [[ "$result" =~ ^continue$ ]]; then
+        pgx.py "$@"
+    else
+        eval "$result"
+    fi
+fi
