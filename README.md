@@ -8,6 +8,14 @@ However, stdin/out are kind of buggy and I'm giving up on direct psql entrance
 via this script. Instead, I've deferred it to a bash wrapper calling this with
 the --getcommand flag and then executing
 
+###Prerequisites
+You'll need psql executable available, python3, jq if you want to use json filtering capabilities,
+and you'll need to add this directory to your path to be able to execute pgx from anywhere.
+Something like
+```bash 
+export PATH=$HOME/pgx:$PATH
+```
+
 ###USAGE
 <pre>
 usage: pgx.py [-h] [-f FILE] [-e [{p,s,d}]] [-u [U]] [-d [D]] [-l [H]] [-b]
